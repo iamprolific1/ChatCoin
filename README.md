@@ -1,13 +1,5 @@
-# Sample Hardhat Project
+# ChatCoin
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+## Overview
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
-```
+ChatCoin is a custom **ERC-20 token** designed to facilitate seamless transactions and interactions with telegram and beyond. With a focus on broader compatibility and utility, the project integrates blockchain technology with the ease of use of **Telegram bots**, allowing users to send, receive, and manage ChatCoin directly within Telegram chats.
