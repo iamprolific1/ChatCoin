@@ -3,7 +3,7 @@ import { parseEther } from "ethers";
 
 async function main() {
     const ChatCoinFactory = await ethers.getContractFactory('ChatCoin');
-    const chatCoin = await ChatCoinFactory.deploy(parseEther('100000'));
+    const chatCoin = await ChatCoinFactory.deploy(parseEther('1000000'));
 
     await chatCoin.waitForDeployment();
 
