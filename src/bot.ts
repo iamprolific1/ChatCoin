@@ -102,6 +102,17 @@ bot.onText(/\/burn (.+)/, async(msg, match: any)=> {
     } catch (error: any) {
         bot.sendMessage(chatId, `Error during burning: ${error.message}`);
     }
+});
+
+bot.onText(/\/totalSupply/, async(msg)=> {
+    const chatId = msg.chat.id;
+
+    try {
+        const supply = await chatCoin.totalSupply();
+        bot.sendMessage(chatId, `The total supply of ChatCoin is ${ethers.formatEther(supply)} tokens.`);
+    } catch (error: any) {
+        bot.sendMessage(chatId, `Error fetching total supply: ${error.message}`);
+    }
 })
 
 
